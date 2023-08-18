@@ -3063,6 +3063,10 @@ Main Header
     padding: 9px 10px;
 }
 
+.header-style-two.fixed-header .login-item .is_login, .header-style-two .multi-lang>li>a {
+    color: #000000;
+}
+
 
 .main-header .menu-btn{
     position: relative;
