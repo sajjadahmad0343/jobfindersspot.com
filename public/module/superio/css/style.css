@@ -307,16 +307,6 @@ li {
     transition: all 300ms ease;
 }
 
-.banner-category .select2-container--default .select2-selection--single {
-    border: 0;
-    padding: 5px 10px;
-}
-
-.select2-container--default .select2-selection--single {
-    height: 40px !important;
-    padding: 5px 10px !important;
-}
-
 .select2-container--default
 .select2-selection--single
 .select2-selection__arrow {
@@ -4661,7 +4651,10 @@ Banner Section
 .banner-section-four .job-search-form .form-group input, .banner-section-four .job-search-form .form-group select {
     padding: 5px 10px;
 }
-
+.banner-section-four .select2-container--default .select2-selection--single {
+    height: 40px;
+    padding: 5px 10px;
+}
 .job-search-form .chosen-container-multi .chosen-choices,
 .job-search-form .chosen-container.chosen-with-drop .chosen-drop{
     background: #ffffff;
