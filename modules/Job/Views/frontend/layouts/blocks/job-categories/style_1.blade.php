@@ -17,7 +17,7 @@
                                 <div class="content @if(empty($category->icon)) no-icon @endif">
                                     @if($category->icon)
                                         <span class="icon d-none d-sm-flex {{ $category->icon }} mr-3"></span>
-                                    @endif
+                                    @endif 
                                     <div>
                                         <h4>{{ $translation->name }}</h4>
                                         @if($category->openJobs->count())
