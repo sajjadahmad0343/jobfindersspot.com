@@ -16,7 +16,7 @@
                             <a href="{{ route('job.search', ['category' => $category->id]) }}">
                                 <div class="content @if(empty($category->icon)) no-icon @endif">
                                     @if($category->icon)
-                                        <span class="icon {{ $category->icon }} mr-3"></span>
+                                        <span class="icon d-none d-sm-flex {{ $category->icon }} mr-3"></span>
                                     @endif
                                     <div>
                                         <h4>{{ $translation->name }}</h4>
