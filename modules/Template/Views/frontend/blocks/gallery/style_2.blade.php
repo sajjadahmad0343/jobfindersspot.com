@@ -10,12 +10,12 @@
             @endif
         </div>
 
-        <div class="row wow fadeInUp">
+        <div class="row wow fadeInUp location-row">
             @if(!empty($list_item2))
             @foreach($list_item2 as $item)
-                <div class="column col-lg-4 col-md-6 col-sm-12">
+                <div class="column col-lg-4 col-md-6 col-sm-12 ">
                     <!-- Feature Block -->
-                    @foreach($item as $item_v2)
+                    {{-- @foreach($item as $item_v2) --}}
                         <div class="feature-block">
                             <div class="inner-box">
                                 <figure class="image"><img src="{{ get_file_url($item_v2['image_id'],'full') }}" alt=""></figure>
@@ -28,7 +28,7 @@
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                    {{-- @endforeach --}}
                 </div>
             @endforeach
             @endif
