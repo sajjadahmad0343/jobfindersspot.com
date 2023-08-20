@@ -264,7 +264,7 @@
 	}
 
 	.banner-section-four{
-		padding: 250px 0 150px;
+		padding: 130px 0 60px;
 	}
 
 	.banner-section .popular-searches{
@@ -425,11 +425,11 @@
 	}
 
 	.banner-section-four .job-search-form form{
-		padding: 10px 15px;
+		padding: 10px 15px 0px;
 	}
 
 	.banner-section-four .job-search-form{
-		max-width: 80%;
+		max-width: 100%;
 		overflow: visible;
 	}
 
@@ -699,18 +699,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (min-width: 768px){
 	.main-menu .navigation > li > ul,
 	.main-menu .navigation > li > ul > li > ul,
@@ -722,7 +710,7 @@
 
 }
 
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 991px){
 	.hide-sm,
 	.main-header .main-box,
 	.sticky-header{
@@ -772,7 +760,7 @@
 	}
 
 	.job-search-form .form-group:last-child{
-		padding-top: 10px;
+		/* padding-top: 10px; */
 		padding-bottom: 0;
 		border-bottom: 0;
 	}
@@ -844,7 +832,7 @@
 
 	.job-search-form .form-group, .company-search-form .form-group{
 		border: 0;
-		margin-bottom: 20px;
+		margin-bottom: 1rem;
 	}
 
 	.job-search-form .ui-selectmenu-button.ui-button,
@@ -953,6 +941,16 @@
 		border: 0;
 	}
 
+.job-search-form .form-group {
+    background: #fff;
+    border-radius: 0.25rem; padding:0px 5px;
+}
+	.job-search-form form > .row { margin-left:0px; margin-right:0px;}
+.job-search-form  .select2-container {
+    max-width: 100%;
+    width:100% !important;
+}
+
 	.banner-section-eight .job-search-form{
 		padding: 0;
 	}
@@ -964,7 +962,7 @@
 	}
 
 	.about-section .image-column{
-		margin-bottom: 100px;
+		margin-bottom: 30px;
 	}
 
 	.about-section .image-column .image img{
@@ -1328,7 +1326,7 @@
 	.main-footer.style-six .widgets-section,
 	.main-footer.style-three .widgets-section,
 	.features-section{
-		padding: 50px 0 20px;
+		padding: 40px 0 20px;
 	}
 
 	.top-companies,
@@ -1350,7 +1348,7 @@
 	.contact-section,
 	.testimonial-section,
 	.job-section{
-		padding: 50px 0;
+		padding: 40px 0;
 	}
 
 	.work-section,
@@ -1364,8 +1362,12 @@
 	.tnc-section,
 	.fun-fact-section,
 	.about-section{
-		padding: 50px 0 0;
+		padding: 50px 0 30px;
 	}
+
+.widgets-section.wow.fadeInUp.animated {
+    padding-bottom: 0;
+}
 
 	.pricing-section,
 	.order-confirmation{
@@ -1447,13 +1449,13 @@
 	}
 
 	.banner-section-four{
-		padding: 220px 0 100px;
+		padding: 110px 0 40px;
 	}
 
 	.banner-section-four,
 	.main-footer.style-three{
-		background: none !important;
-		background-color: #143a8f !important;
+		/* background: none !important; */
+		/* background-color: #143a8f !important; */
 	}
 
 	.testimonial-section-three .slide-item{
@@ -1621,19 +1623,12 @@
 		margin-right: 40px;
 		margin-top: 20px;
 	}
+	.call-to-action-three.call-to-action-three {
 
+    padding: 40px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
+}
 
 
 @media only screen and (max-width: 599px){
