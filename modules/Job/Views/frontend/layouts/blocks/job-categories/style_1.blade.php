@@ -11,17 +11,19 @@
                 @foreach($job_categories as $category)
                     @php $translation = $category->translateOrOrigin(app()->getLocale()); @endphp
                     <!-- Category Block -->
-                    <div class="category-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="category-block col-lg-4 col-md-6 col-6">
                         <div class="inner-box">
                             <a href="{{ route('job.search', ['category' => $category->id]) }}">
                                 <div class="content @if(empty($category->icon)) no-icon @endif">
                                     @if($category->icon)
-                                        <span class="icon {{ $category->icon }}"></span>
+                                        <span class="icon {{ $category->icon }} mr-3"></span>
                                     @endif
-                                    <h4>{{ $translation->name }}</h4>
-                                    @if($category->openJobs->count())
-                                        <p>({{ $category->openJobs->count() }} {{ $category->openJobs->count() > 1 ? __("open positions") : __("open position") }})</p>
-                                    @endif
+                                    <div>
+                                        <h4>{{ $translation->name }}</h4>
+                                        @if($category->openJobs->count())
+                                            <p class="mt-1">({{ $category->openJobs->count() }} {{ $category->openJobs->count() > 1 ? __("open positions") : __("open position") }})</p>
+                                        @endif
+                                    </div>
                                 </div>
                             </a>
                         </div>

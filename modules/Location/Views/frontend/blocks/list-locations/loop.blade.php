@@ -16,7 +16,7 @@
         </div>
     </div>
 </div> 
-<div class="location-content p-lg-3 p-2">
+<div class="location-content p-lg-3 py-2 px-3">
     <h5>{{ $translation->name }}</h5>
     <span class="total-jobs">{{ $row->openJobs->count() }} {{ $row->openJobs->count() == 1 ? __("Job") : __("Jobs") }}</span>
     <a href="{{ route('job.location.index', ['slug' => $row->slug]) }}" class="overlay-link"></a>

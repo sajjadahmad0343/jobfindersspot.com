@@ -1408,7 +1408,7 @@
 	}
 
 	.category-block{
-		margin-bottom: 20px;
+		margin-bottom: 0.75rem;
 	}
 
 	.sec-title h2{
@@ -1627,7 +1627,9 @@
 
     padding: 40px 0;
 }
-
+.category-block .inner-box {
+    padding: 0.75rem;
+}
 }
 
 
@@ -1745,7 +1747,7 @@
 	}
 
 	.category-block h4{
-		font-size: 16px;
+		font-size: 1rem;
 		line-height: 1.4em;
 	}
 
