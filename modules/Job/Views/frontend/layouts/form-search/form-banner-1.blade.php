@@ -12,7 +12,7 @@
             @endforeach
         @endif
         <!-- Form Group -->
-        <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right">
+        <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right banner-form-submit">
             @if(isset($_GET['_layout']))
                 <input type="hidden" name="_layout" value="{{ $_GET['_layout'] }}">
             @endif
