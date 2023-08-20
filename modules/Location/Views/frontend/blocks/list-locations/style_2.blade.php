@@ -9,10 +9,10 @@
                 <a href="{{ $load_more_url }}" class="link">{{ $load_more_name }}<span class="fa fa-angle-right"></span></a>
             @endif
         </div>
-        <div class="row wow fadeInUp location-row">
+        <div class="row wow fadeInUp location-row mx-n2">
             @if(!empty($rows))
                 @foreach($rows as $key => $row)
-                        <div class="column col-lg-4 col-md-6 col-sm-12">
+                        <div class="column col-lg-3 col-md-3 col-sm-3 col-6 px-2 mb-3">
                             @include("Location::frontend.blocks.list-locations.loop")
                         </div>
                 @endforeach
