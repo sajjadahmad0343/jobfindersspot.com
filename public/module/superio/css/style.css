@@ -4651,10 +4651,7 @@ Banner Section
 .banner-section-four .job-search-form .form-group input, .banner-section-four .job-search-form .form-group select {
     padding: 5px 10px;
 }
-.banner-section-four .select2-container--default .select2-selection--single {
-    height: 40px;
-    padding: 5px 10px;
-}
+
 .job-search-form .chosen-container-multi .chosen-choices,
 .job-search-form .chosen-container.chosen-with-drop .chosen-drop{
     background: #ffffff;
@@ -8355,6 +8352,16 @@ Features Section
 .feature-block .image {
     position: relative;
     margin-bottom: 0;
+}
+
+figure.image:after {
+    content: '';
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 38%);
+    position: absolute;
 }
 
 .feature-block .image img {
