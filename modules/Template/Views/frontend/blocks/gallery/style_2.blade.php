@@ -10,7 +10,7 @@
             @endif
         </div>
 
-        <div class="row wow fadeInUp location-row">
+        <div class="row wow fadeInUp">
             @if(!empty($list_item2))
             @foreach($list_item2 as $item)
                 <div class="column col-lg-4 col-md-6 col-sm-12 ">

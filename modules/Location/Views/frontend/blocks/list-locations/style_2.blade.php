@@ -9,7 +9,7 @@
                 <a href="{{ $load_more_url }}" class="link">{{ $load_more_name }}<span class="fa fa-angle-right"></span></a>
             @endif
         </div>
-        <div class="row wow fadeInUp">
+        <div class="row wow fadeInUp location-row">
             @if(!empty($rows))
                 @foreach($rows as $key => $row)
                         <div class="column col-lg-4 col-md-6 col-sm-12">
