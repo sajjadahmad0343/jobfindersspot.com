@@ -2714,7 +2714,7 @@ Main Header
 
 .main-header.fixed-header .logo{
     padding: 15px 0;
-    margin-right: 10px !important;
+    margin-right: 0px !important;
 }
 
 .main-header .main-box {
@@ -3062,9 +3062,13 @@ Main Header
 }
 
 .main-header .outer-box .btn-box a{
-    margin-left: 20px;
+    margin-left: 10px;
     min-width: 110px;
     padding: 9px 10px;
+}
+
+.main-header .outer-box .btn-box a#dropdownMenuUser {
+    padding: 5px 5px;
 }
 
 .header-style-two.fixed-header .login-item .is_login, .header-style-two .multi-lang>li>a {
@@ -3279,7 +3283,7 @@ Header Style Two
 }
 
 .header-style-two .main-menu .navigation > li{
-    margin-left: 25px;
+    margin-left: 30px;
     margin-right: 0;
 }
 
