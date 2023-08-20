@@ -2714,6 +2714,7 @@ Main Header
 
 .main-header.fixed-header .logo{
     padding: 15px 0;
+    margin-right: 10px !important;
 }
 
 .main-header .main-box {
