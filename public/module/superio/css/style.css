@@ -4746,6 +4746,20 @@ border-bottom: 0 !important;*/
     max-width: 100%;
     height: auto;
 }
+/* ==============  
+Location Style
+ ============== */
+
+.location-content {
+    border: 1px solid #ECEDF2;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.location-content h5 { font-size:1.125rem;}
+.location-content .total-jobs { font-size:0.9rem}
+.location-content:hover *  {
+   color: var(--main-color);
+}
 
 /*================================
 Info Blocks
