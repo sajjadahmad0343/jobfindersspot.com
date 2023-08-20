@@ -2822,6 +2822,9 @@ Main Header
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
+.main-menu .navigation>li>a {
+    padding-right: 0px !important;
+}
 
 .main-menu .navigation > li.current > a,
 .main-menu .navigation > li.current > span {
@@ -3079,6 +3082,12 @@ Main Header
     color: #696969;
 }
 
+.fixed-header.main-header .menu-btn .icon {
+    color: #000000 !important;
+}
+
+span.icon.la.la-bookmark-o {}
+
 .main-header .menu-btn .count{
     position: absolute;
     right: -8px;
@@ -3266,7 +3275,7 @@ Header Style Two
 }
 
 .header-style-two .logo{
-    margin-right: 0;
+    margin-right: 0 !important;
 }
 
 .header-style-two .main-menu .navigation > li{
@@ -4648,6 +4657,10 @@ Banner Section
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
 }
+.job-search-form  .select2-container--default .select2-selection--single {
+    height: 40px;
+    padding: 5px 10px;
+}
 
 .banner-section-four .job-search-form .form-group input, .banner-section-four .job-search-form .form-group select {
     padding: 5px 10px;
@@ -4690,6 +4703,7 @@ border-bottom: 0 !important;*/
     width: 100%;
     min-width: auto;
     height: 40px;
+    padding: 5px 20px;
 }
 
 /* Job Search Form */
@@ -4750,7 +4764,7 @@ border-bottom: 0 !important;*/
 /* ==================
 Location
 ================= */
-.location-content { border:1px solid #ccc; border-radius:0.5rem;}
+.location-content {border: 1px solid #ECEDF2;border-radius:0.5rem;}
 .location-content:hover {border-color: var(--main-color);}
 .location-content h5 { font-size:1.125rem}
 .location-content .total-jobs {font-size: 0.95rem;}
