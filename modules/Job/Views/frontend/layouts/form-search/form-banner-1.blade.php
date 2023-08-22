@@ -19,4 +19,4 @@
             <button type="submit" class="theme-btn btn-style-one">{{ __("Find Jobs") }}</button>
         </div>
     </div>
-</form>
+</form> 
