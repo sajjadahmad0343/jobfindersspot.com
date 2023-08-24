@@ -294,7 +294,9 @@ class UserController extends FrontendController
                 'error'    => false,
                 'messages' => false,
                 // 'redirect' => $request->input('redirect') ?? $request->headers->get('referer') ?? route('auth.login')
-                'redirect' =>  route('auth.login')
+                // 'redirect' =>  route('auth.login')
+                'redirect' => $request->input('redirect') ?? $request->headers->get('referer') ?? url(app_get_locale(false, '/'))
+
             ], 200);
         }
     }
