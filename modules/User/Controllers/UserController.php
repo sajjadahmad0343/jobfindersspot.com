@@ -271,7 +271,7 @@ class UserController extends FrontendController
                'phone'    => $request->input('phone'),
             ]);
             event(new Registered($user));
-            // Auth::loginUsingId($user->id);
+            Auth::loginUsingId($user->id);
             try {
                 event(new SendMailUserRegistered($user));
             } catch (Exception $exception) {
@@ -284,7 +284,7 @@ class UserController extends FrontendController
                 $user->assignRole($role);
                 if($role == 'employer')
                 {
-                    $this->company::firstOrCreate(['name'=>$request->input('company_name'),'owner_id'=>$user->id,'status'=>'draft']);
+                    $this->company::firstOrCreate(['name'=>$request->input('company_name'),'owner_id'=>$user->id,'status'=>'draft','email'=>$request->email,'phone'=>$request->phone]);
                 }
                 if($role == 'candidate'){
                     Candidate::query()->insert(['id' => $user->id]);
