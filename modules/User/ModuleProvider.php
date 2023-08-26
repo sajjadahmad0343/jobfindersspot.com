@@ -164,13 +164,13 @@ class ModuleProvider extends ModuleServiceProvider
                 'permission' => 'employer_manage',
                 'enable' => true
             ],
-            'my_orders' => [
-                'url' => 'user/order',
-                'title' => __("My Orders"),
-                'icon' => 'la la-luggage-cart',
-                'permission' => 'employer_manage',
-                'enable' => true
-            ],
+            // 'my_orders' => [
+            //     'url' => 'user/order',
+            //     'title' => __("My Orders"),
+            //     'icon' => 'la la-luggage-cart',
+            //     'permission' => 'employer_manage',
+            //     'enable' => true
+            // ],
             'all_applicants' => [
                 'url' => 'user/applicants',
                 'title' => __("All Applicants"),
@@ -206,13 +206,13 @@ class ModuleProvider extends ModuleServiceProvider
                 'permission' => 'candidate_manage',
                 'enable' => !is_admin()
             ],
-            'my_plan' => [
-                'url' => 'user/my-plan',
-                'title' => __("My Plans"),
-                'icon' => 'la la-box',
-                'permission' => 'employer_manage',
-                'enable' => true
-            ],
+            // 'my_plan' => [
+            //     'url' => 'user/my-plan',
+            //     'title' => __("My Plans"),
+            //     'icon' => 'la la-box',
+            //     'permission' => 'employer_manage',
+            //     'enable' => true
+            // ],
             'my_contact' => [
                 'url' => 'user/my-contact',
                 'title' => __("My Contact"),

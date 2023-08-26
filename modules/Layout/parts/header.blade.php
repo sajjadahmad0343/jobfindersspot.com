@@ -154,8 +154,12 @@
             <div class="outer-box">
                 <!-- Login/Register -->
                 <div class="login-box">
-                    @if(!Auth::id())
+                    {{-- @if(!Auth::id())
                         <a href="#" class="bc-call-modal login"><span class="icon-user"></span></a>
+                    @else --}}
+                    @if(!Auth::id())
+                        <a href="{{url('login')}}" class="theme-btn btn-style-three login px-sm-3 px-2 py-1">Login</a>
+                        <a href="{{url('register')}}" class="theme-btn btn-style-three login px-sm-3 px-2 py-1">{{ __("Register") }}</a>
                     @else
                         <a href="#" class="is_login dropdown-toggle" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             @if($avatar_url = Auth::user()->getAvatarUrl())
