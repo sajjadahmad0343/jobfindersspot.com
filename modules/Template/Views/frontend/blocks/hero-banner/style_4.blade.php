@@ -71,7 +71,7 @@
                             </select>
                         </div>
 
-                        <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right bg-transparent">
+                        <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right adv-search-btn">
                             <button type="submit" class="theme-btn btn-style-two">{{ __('Find Jobs') }}</button>
                         </div>
                     </div>
