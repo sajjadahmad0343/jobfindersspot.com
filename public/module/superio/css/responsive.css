@@ -2381,5 +2381,10 @@
 		margin-right: 0;
 		width: 100%;
 	}
-
+.mobile-header .login-box a {
+    font-size: 1rem;
+}
+.mobile-header {
+    padding: 15px 15px;
+}
 }
