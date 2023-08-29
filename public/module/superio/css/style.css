@@ -120,6 +120,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     font-family: 'Sofia Pro';
+    font-family: 'MontserratRegular';
     font-style: normal;
 }
 
@@ -9581,6 +9582,8 @@ About Section Three
     color: #696969;
     margin-bottom: 26px;
 }
+
+.about-us-page-content h5, .about-us-page-content h6 { margin-bottom:0.75rem}
 
 /***
 
