@@ -1556,7 +1556,7 @@ Buttons Styles
     line-height: 20px;
     border-radius: 8px;
     font-weight: 400;
-    padding: 18px 35px 15px 35px;
+    padding: 0.65rem 1.5rem;
 }
 
 .btn-style-three:hover{
