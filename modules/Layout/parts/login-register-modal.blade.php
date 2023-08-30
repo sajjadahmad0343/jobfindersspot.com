@@ -5,9 +5,9 @@
         <div class="login-form default-form">
             <div class="form-inner">
                 @if($site_title = setting_item("site_title"))
-                    <h3>{{ __("Login to :site_title", ['site_title' => $site_title]) }}</h3>
+                    <h3 class="text-center mb-4">{{ __("Login to :site_title", ['site_title' => $site_title]) }}</h3>
                 @else
-                    <h3>{{ __("Login") }}</h3>
+                    <h3 class="text-center mb-4">{{ __("Login") }}</h3>
                 @endif
 
                 @include('Layout::auth/login-form',['popup'=>true])
@@ -24,9 +24,9 @@
             <div class="form-inner">
                 <div class="form-inner">
                     @if($site_title = setting_item("site_title"))
-                        <h3>{{ __("Create a Free :site_title Account", ['site_title' => $site_title]) }}</h3>
+                        <h3 class="text-center mb-4">{{ __("Create a Free :site_title Account", ['site_title' => $site_title]) }}</h3>
                     @else
-                        <h3>{{ __("Sign Up") }}</h3>
+                        <h3 class="text-center mb-4">{{ __("Sign Up") }}</h3>
                     @endif
                         @include('Layout::auth/register-form')
                 </div>
