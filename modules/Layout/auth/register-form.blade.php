@@ -73,6 +73,9 @@
             </button>
         </div>
     </form>
+    <div class="bottom-box">
+        <div class="text">Already have an account? <a href="/login" class="signup">Login here</a></div>
+    </div>
     @if(setting_item('facebook_enable') or setting_item('google_enable') or setting_item('twitter_enable'))
         <div class="bottom-box">
             <div class="divider"><span>or</span></div>
