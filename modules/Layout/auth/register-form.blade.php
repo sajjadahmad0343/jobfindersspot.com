@@ -2,7 +2,7 @@
     @csrf
     <form method="post" action="#">
         <div class="form-group mb-3">
-            <div class="btn-box row">
+            <div class="btn-box form-row">
                 <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                     <input class="checked register-check position-absolute" type="radio" name="type" id="checkbox1" value="candidate" checked/>
                     <label for="checkbox1" class="theme-btn btn-style-four"><i class="la la-user"></i> {{ __("Candidate") }}</label>

@@ -1575,7 +1575,7 @@ Buttons Styles
     line-height: 20px;
     border-radius: 8px;
     font-weight: 400;
-    padding: 10px 1.5rem;
+    padding: 10px 1rem;
 }
 
 .btn-style-four:hover{
@@ -15976,7 +15976,7 @@ Login Section
 }
 
 .login-form .text a{
-    color: #696969;
+    color: #0070ff;
     font-weight: 500;
 }
 
