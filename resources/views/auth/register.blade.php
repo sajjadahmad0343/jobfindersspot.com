@@ -7,9 +7,9 @@
             <!-- Login Form -->
             <div class="login-form default-form bravo-login-form-page bravo-login-page">
                 @if($site_title = setting_item("site_title"))
-                    <h3>{{ __("Create a Free :site_title Account", ['site_title' => $site_title]) }}</h3>
+                    <h3 class="mb-md-4 mb-3">{{ __("Create a Free :site_title Account", ['site_title' => $site_title]) }}</h3>
                 @else
-                    <h3>{{ __("Register") }}</h3>
+                    <h3 class="mb-md-4 mb-3">{{ __("Register") }}</h3>
                 @endif
                 @include('Layout::auth.register-form',['captcha_action'=>'register_normal'])
             </div>

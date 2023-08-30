@@ -1290,21 +1290,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 767px){
 	.job-search-form{
 		min-width: auto;
@@ -2354,9 +2339,12 @@
 	.banner-section-ten .job-search-form{
 		margin-bottom: 100px;
 	}
-
+.default-form .form-group input[type="text"], .default-form .form-group input[type="password"], .default-form .form-group input[type="number"], .default-form .form-group input[type="email"], .default-form .form-group input[type="url"], .default-form .form-group textarea, .default-form .form-group select {
+		line-height: 30px;
+		padding: 7px 0.75rem;
+		font-size: 15px;
+	}
 }
-
 @media only screen and (max-width: 479px){
 	.ls-section .filters-outer{
 		padding: 30px 20px 10px;

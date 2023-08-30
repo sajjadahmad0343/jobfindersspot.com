@@ -1575,7 +1575,7 @@ Buttons Styles
     line-height: 20px;
     border-radius: 8px;
     font-weight: 400;
-    padding: 15px 35px;
+    padding: 10px 1.5rem;
 }
 
 .btn-style-four:hover{
@@ -2467,7 +2467,7 @@ section hr {
     line-height: 20px;
     color: #202124;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem; 
 }
 
 .default-form .form-group input[type="text"],
