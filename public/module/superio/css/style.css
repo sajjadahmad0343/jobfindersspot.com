@@ -3064,7 +3064,7 @@ Main Header
 
 .main-header .outer-box .btn-box a{
     margin-left: 10px;
-    min-width: 110px;
+    min-width: 90px;
     padding: 9px 10px;
 }
 
@@ -3329,7 +3329,7 @@ Header Style Two
 }
 
 .header-style-two .theme-btn{
-    border-radius: 50px;
+    /* border-radius: 50px; */
 }
 
 .header-style-two.fixed-header .theme-btn {
