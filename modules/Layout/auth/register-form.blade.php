@@ -62,7 +62,7 @@
                 <span class="invalid-feedback error error-recaptcha"></span>
             </div>
         @endif
-        <div class="position-relative">
+        <div class="position-relative d-flex">
             <input type="checkbox" class="mt-1" name="term" id="terms-and-conditions">
             <label for="terms-and-conditions" class="d-block">
             <span class="d-block">I agree to accept <a href="/page/privacy-policy">terms and conditions</a> and <a href="/page/privacy-policy">Privacy Policy.</a></span>
