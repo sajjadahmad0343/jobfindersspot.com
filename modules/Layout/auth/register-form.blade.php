@@ -63,9 +63,9 @@
             </div>
         @endif
         <div class="position-relative">
-            <input type="checkbox" name="term" id="terms-and-conditions">
+            <input type="checkbox" class="mt-1" name="term" id="terms-and-conditions">
             <label for="terms-and-conditions" class="d-block">
-            I agree to accept <a href="/page/privacy-policy">terms and conditions</a> and <a href="/page/privacy-policy">Privacy Policy.</a>
+            <span class="d-block">I agree to accept <a href="/page/privacy-policy">terms and conditions</a> and <a href="/page/privacy-policy">Privacy Policy.</a></span>
             <span class="invalid-feedback error error-term"></span>
             </label>
         </div>
