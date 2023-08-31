@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 1600px){
 	.main-menu .navigation > li{
-		margin-right: 20px;
+		/* margin-right: 20px; */
 	}
 
 	.header-style-two .main-menu .navigation > li{
@@ -105,7 +105,7 @@
 	}
 
 	.main-header .logo{
-		margin-right: 60px;
+		/* margin-right: 60px; */
 	}
 
 	.user-sidebar .sidebar-inner{

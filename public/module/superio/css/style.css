@@ -3646,8 +3646,7 @@ Mobile Header
 
 .mobile-header .login-box a{
     color: #202124;
-    font-size: 20px;
-
+    font-size: 1rem;
 }
 
 .mm-panels {
@@ -16301,7 +16300,7 @@ Main Footer
     font-weight:500;
     color:#2F2D51;
     line-height: 1.4em;
-    margin-bottom:30px;
+    margin-bottom: 20px;
 }
 
 .main-footer .logo{
