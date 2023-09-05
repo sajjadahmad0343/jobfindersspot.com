@@ -19,3 +19,4 @@ yarn-error.log
 /storage/installed
 composer.lock
 .env.example
+sitemap.xml
