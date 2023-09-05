@@ -128,10 +128,16 @@
 </head>
 <body data-anm=".anm" class="app-blade frontend-page {{$body_class ?? ''}} @if(!empty($is_home) or !empty($header_transparent)) header_transparent @endif @if(setting_item_with_lang('enable_rtl')) is-rtl @endif @if(is_api()) is_api @endif">
     @auth
-        @if (!auth()->user()->is_verified)
-            @redirect('/email/verify')
-        @endif
-    @endauth 
+    @if (!auth()->user()->is_verified)
+        @php
+        header('Location: /email/verify');
+        exit;
+       @endphp
+    @endif
+@endauth
+
+
+
     @php event(new \Modules\Layout\Events\LayoutBeginBody()); @endphp
 
     {!! setting_item('body_scripts') !!}
