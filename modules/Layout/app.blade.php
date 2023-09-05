@@ -131,7 +131,7 @@
         @if (!auth()->user()->is_verified)
             @redirect('/email/verify')
         @endif
-    @endauth
+    @endauth 
     @php event(new \Modules\Layout\Events\LayoutBeginBody()); @endphp
 
     {!! setting_item('body_scripts') !!}
