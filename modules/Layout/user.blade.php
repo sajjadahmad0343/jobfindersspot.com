@@ -130,8 +130,12 @@
     @php event(new \Modules\Layout\Events\LayoutEndHead()); @endphp
 
 </head>
-<body data-anm=".anm" class="frontend-page user_wrap {{$body_class ?? ''}} @if(!empty($is_home) or !empty($header_transparent)) header_transparent @endif @if(setting_item_with_lang('enable_rtl')) is-rtl @endif @if(is_api()) is_api @endif">
-   
+<body data-anm=".anm" class="user-blade frontend-page user_wrap {{$body_class ?? ''}} @if(!empty($is_home) or !empty($header_transparent)) header_transparent @endif @if(setting_item_with_lang('enable_rtl')) is-rtl @endif @if(is_api()) is_api @endif">
+    @auth
+    @if (!auth()->user()->is_verified)
+        @redirect('/email/verify') {{-- Redirect to the verification page --}}
+    @endif
+@endauth
 @php event(new \Modules\Layout\Events\LayoutBeginBody()); @endphp
 
 {!! setting_item('body_scripts') !!}
