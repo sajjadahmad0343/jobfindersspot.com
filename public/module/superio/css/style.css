@@ -120,9 +120,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     font-family: 'Sofia Pro';
-    font-family: 'MontserratRegular';
+    /* font-family: 'MontserratRegular'; */
     font-style: normal;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
