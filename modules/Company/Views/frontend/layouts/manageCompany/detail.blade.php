@@ -102,8 +102,8 @@
                                     @if(is_default_lang())
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <input @if($row->allow_search) checked @endif type="checkbox" name="allow_search" value="1" class="form-control">
-                                                <label>{{__("Show Company Profile In Search & Companies List")}}</label>
+                                                <input @if($row->allow_search) checked @endif type="checkbox" name="allow_search" value="1" class="form-control" id="allow-company-in-search">
+                                                <label for="allow-company-in-search">{{__("Show Company Profile In Search & Companies List")}}</label>
                                             </div>
                                         </div>
                                     @endif
