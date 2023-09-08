@@ -123,7 +123,7 @@
                                     <label>{{__('Allow Search')}}</label>
                                     <select required class="custom-select" name="allow_search">
                                         {{-- <option value="">{{ __('-- Select --')}}</option> --}}
-                                        <option value="publish">{{ __('-- Select --')}}</option>
+                                        <option value="publish" selected>{{ __('-- Select --')}}</option>
                                         <option @if(old('allow_search',@$row->candidate->allow_search) =='publish') selected @endif value="publish">{{ __('Publish')}}</option>
                                         <option @if(old('allow_search',@$row->candidate->allow_search) =='hide') selected @endif value="hide">{{ __('Hide')}}</option>
                                     </select>
