@@ -44,6 +44,7 @@
                     </select>
                     <select name="allow_search" class="form-control">
                         {{-- <option value="">{{ __('-- Allow Search --')}} </option> --}}
+                        <option value="publish">{{ __('-- Allow Search --')}} </option>
                         <option @if((Request()->allow_search == 'publish')) selected @endif value="publish"> {{__('Publish')}} </option>
                         <option @if((Request()->allow_search == 'hide')) selected @endif value="hide"> {{__('Hide')}} </option>
                     </select>
