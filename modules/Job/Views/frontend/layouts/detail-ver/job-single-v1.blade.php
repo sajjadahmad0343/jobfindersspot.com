@@ -22,6 +22,27 @@
                     <div class="job-detail">
                         {!! @clean($translation->content) !!}
                     </div>
+                    <div class="sidebar-column col-lg-4 col-md-12 col-sm-12  d-lg-none">
+                        <aside class="sidebar">
+                            <div class="sidebar-widget">
+    
+                                @include("Job::frontend.layouts.details.overview")
+    
+                                @if($row->map_lat && $row->map_lng)
+                                    <h4 class="widget-title">{{ __("Job Location") }}</h4>
+                                    <div class="widget-content">
+                                        @include("Job::frontend.layouts.details.location")
+                                    </div>
+                                @endif
+    
+                                @include("Job::frontend.layouts.details.skills")
+    
+                            </div>
+    
+                            @include("Job::frontend.layouts.details.company")
+    
+                        </aside>
+                    </div>
 
                     @include("Job::frontend.layouts.details.gallery")
 
@@ -33,7 +54,7 @@
 
                 </div>
 
-                <div class="sidebar-column col-lg-4 col-md-12 col-sm-12">
+                <div class="sidebar-column col-lg-4 col-md-12 col-sm-12 d-none d-lg-block">
                     <aside class="sidebar">
                         <div class="sidebar-widget">
 
