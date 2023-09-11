@@ -42,7 +42,7 @@ Route::group(['prefix'=>'user','middleware' => ['auth','verified']],function(){
     Route::get('chat','ChatController@index')->name('user.chat');
 });
 
-Route::group(['prefix'=>config('chatify.path'),'middleware'=>'auth'],function(){
+Route::group(['prefix'=>config('chatify.path'),'middleware'=>['auth', 'verified']],function(){
     Route::get('/', 'ChatController@iframe')->name(config('chatify.path'));
     Route::post('search','ChatController@search')->name('search');
     Route::post('getContacts', 'ChatController@getContacts')->name('contacts.get');
@@ -65,6 +65,6 @@ Route::get('/user/plan/buy/{id}','PlanController@buy')->name('user.plan.buy')->m
 
 
 //Contact
-Route::group(['middleware'=>'auth'],function() {
+Route::group(['middleware'=>['auth', 'verified']],function() {
     Route::get('/user/my-contact', 'ContactController@myContact')->name("user.my-contact");
 });
