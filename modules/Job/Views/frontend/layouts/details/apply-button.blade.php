@@ -1,5 +1,4 @@
 <div class="btn-box">
-    {{dd($row)}}
     @if($row->isOpen())
         @if(empty(setting_item('job_hide_job_apply')) && $row->apply_type == 'email')
             <a href="mailto:{{ $row->apply_email ?? ($row->company->email ?? '') }}" target="_blank" rel="nofollow" class="theme-btn btn-style-one">{{ __("Apply For Job") }}</a>
