@@ -3,15 +3,16 @@
 namespace Modules\Company\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Modules\Company\Models\Company;
-use Modules\Company\Models\CompanyCategory as Category;
-use Modules\Company\Models\CompanyTerm;
-use Modules\Company\Models\CompanyTranslation;
-use Modules\Core\Models\Attributes;
 use Modules\FrontendController;
+use Modules\Company\Models\Company;
+use Modules\Core\Models\Attributes;
+use Illuminate\Support\Facades\Auth;
 use Modules\Language\Models\Language;
 use Modules\Location\Models\Location;
+use Modules\Company\Models\CompanyTerm;
+use Illuminate\Support\Facades\Validator;
+use Modules\Company\Models\CompanyTranslation;
+use Modules\Company\Models\CompanyCategory as Category;
 
 class ManageCompanyController extends FrontendController{
 
@@ -68,6 +69,26 @@ class ManageCompanyController extends FrontendController{
     }
 
     public function companyUpdate(Request $request){
+        $check = Validator::make($request->input(),[
+            'location_id'              => 'required',
+            'category_id'              => 'required',
+            'about'                    => 'required',
+            'address'                  => 'required',
+        ]);
+
+        $customMessages = [
+            'location_id.required' => 'Please fill the location.',
+            'category_id.required' => 'Please select the category.',
+            'about.required' => 'Please fill in the company about.',
+            'address.required' => 'Please fill the address.',
+        ];
+        
+        $check->setCustomMessages($customMessages);
+        
+        if (!$check->validated()) {
+            return back()->withInput($request->input())->withErrors($check);
+        }
+
         $this->checkPermission('employer_manage');
         $input = $request->input();
 

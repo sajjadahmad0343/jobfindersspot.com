@@ -1,7 +1,7 @@
 <?php
 use \Illuminate\Support\Facades\Route;
 
-Route::group(['middleware'=>'verified'],function() {
+Route::group(['middleware'=>['verified','complete_profile']],function() {
     Route::group(['prefix'=>env('GIG_ROUTE_PREFIX','gig')],function(){
         Route::get('/','GigController@index')->name('gig.search'); // Search
         Route::get('/{slug}','GigController@detail')->name('gig.detail');// Detail

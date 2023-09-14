@@ -2,9 +2,10 @@
 
 namespace App\Http;
 
-use App\Http\Middleware\RequireChangePassword;
+use App\Http\Middleware\CompleteProfile;
 use App\Http\Middleware\SetCurrentCurrency;
 use App\Http\Middleware\SetLanguageForAdmin;
+use App\Http\Middleware\RequireChangePassword;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -85,6 +86,8 @@ class Kernel extends HttpKernel
         "system_log_view" => \App\Http\Middleware\CheckForLogPermission::class,
 
         "set_language_for_api" => \App\Http\Middleware\SetLanguageForApi::class,
+
+        "complete_profile" => CompleteProfile::class
     ];
 
     /**

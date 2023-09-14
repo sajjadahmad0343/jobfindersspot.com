@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-Route::group(['middleware'=>'verified'],function() {
+Route::group(['middleware'=>'verified','complete_profile'],function() {
     // Booking
     Route::group(['prefix'=>config('booking.booking_route_prefix')],function(){
         Route::post('/addToCart','BookingController@addToCart');

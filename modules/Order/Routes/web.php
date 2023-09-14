@@ -1,7 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 
-Route::group(['middleware'=>'verified'],function() {
+Route::group(['middleware'=> ['verified', 'complete_profile']],function() {
 
     Route::group(['prefix'=>'cart','middleware'=>'auth'],function(){
         Route::get('/','CartController@index')->name('cart');

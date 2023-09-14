@@ -180,6 +180,13 @@ class UserController extends AdminController
                 abort(403);
             }
 
+            $customMessages = [
+                'location_id.required' => 'Please fill the location.',
+                'bio.required' => 'Please fill up the biographical field.',
+                'experience_year.required' => 'Please add your experience.',
+                'address.required' => 'Please fill the address.',
+            ];
+            
             $request->validate([
                 'first_name'              => 'required|max:255',
                 'last_name'              => 'required|max:255',
@@ -192,7 +199,13 @@ class UserController extends AdminController
                     'max:255',
                     Rule::unique('users')->ignore($row->id)
                 ],
-            ]);
+                'title' => 'required|max:255',
+                'gender' => 'required|max:255',
+                'bio' => 'required',
+                'experience_year' => 'required|max:11',
+                'address' => 'required|max:255',
+                'location_id' => 'required|max:11',
+            ], $customMessages);
 
         }else{
             $check = Validator::make($request->input(),[
@@ -210,7 +223,7 @@ class UserController extends AdminController
             ]);
 
             if(!$check->validated()){
-                return back()->withInput($request->input());
+                return back()->withInput($request->input())->withErrors($check);
             }
 
             $row = new User();

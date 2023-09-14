@@ -14,6 +14,15 @@
                         <p class="item-url-demo">{{__("Permalink")}}: {{ url(config('companies.companies_route_prefix') ) }}/<a href="#" class="open-edit-input" data-name="slug">{{$row->slug}}</a></p>
                     @endif
                 </div>
+
+                @if($row->location_id == null)
+                <div class="alert alert-warning alert-dismissible fade show mt-2" role="alert">
+                    <strong>Note: </strong> Complete the company profile first in order to use other functionalities.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @endif
             </div>
 
             @include('admin.message')
