@@ -2,7 +2,7 @@
 
 namespace App\Http;
 
-use App\Http\Middleware\CompleteProfile;
+// use App\Http\Middleware\CompleteProfile;
 use App\Http\Middleware\SetCurrentCurrency;
 use App\Http\Middleware\SetLanguageForAdmin;
 use App\Http\Middleware\RequireChangePassword;
@@ -87,7 +87,7 @@ class Kernel extends HttpKernel
 
         "set_language_for_api" => \App\Http\Middleware\SetLanguageForApi::class,
 
-        "complete_profile" => CompleteProfile::class
+        "complete_profile" => \App\Http\Middleware\CompleteProfile::class,
     ];
 
     /**
