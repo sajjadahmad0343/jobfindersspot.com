@@ -53,14 +53,16 @@
                 </g>
             </svg>
             </span>
+            @if(($row->experience))
             <h5>{{ __("Experience:") }}</h5>
             <span>
-                @if(empty($row->experience) || (float)$row->experience < 1)
+                @if( (float)$row->experience < 1)
                     {{ __("Fresh") }}
                 @else
                     {{ $row->experience }} {{ $row->experience > 1 ? __("years") : __("year") }}
                 @endif
             </span>
+            @endif
         </li>
         @if($row->number_recruitments)
             <li>
