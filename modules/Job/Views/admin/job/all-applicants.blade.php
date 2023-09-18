@@ -108,11 +108,13 @@
                                                 <td><input type="checkbox" name="ids[]" class="check-item" value="{{$row->id}}">
                                                 </td>
                                                 <td>
+                                                    @if($row->candidateInfo && $row->candidateInfo->getAuthor) 
                                                     @if(!empty($row->candidateInfo->getAuthor->getDisplayName()))
                                                         <a href="{{ $row->candidateInfo->getDetailUrl() }}" target="_blank">
                                                             <img src="{{ $row->candidateInfo->getAuthor->getAvatarUrl() }}" style="border-radius: 50%" class="company-logo" />
                                                             {{$row->candidateInfo->getAuthor->getDisplayName() ?? ''}}
                                                         </a>
+                                                    @endif
                                                     @endif
                                                 </td>
                                                 <td class="title">

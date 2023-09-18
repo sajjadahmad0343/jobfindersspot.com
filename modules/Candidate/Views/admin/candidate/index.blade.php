@@ -9,7 +9,7 @@
             </div>
         </div>
         @include('admin.message')
-        <div class="filter-div d-flex justify-content-between ">
+        <div class="filter-div d-flex justify-content-between flex-wrap">
             <div class="col-left">
                 @if(!empty($rows))
                     <form method="post" action="{{url('admin/module/candidate/bulkEdit')}}"
