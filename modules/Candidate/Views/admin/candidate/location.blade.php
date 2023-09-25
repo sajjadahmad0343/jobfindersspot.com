@@ -76,7 +76,7 @@
             </div>
         @endif
     </div>
-    <div class="form-group">
+    <div class="form-group d-none">
         <label class="control-label">{{__("The geographic coordinate")}}</label>
         <div class="control-map-group">
             <div id="map_content"></div>

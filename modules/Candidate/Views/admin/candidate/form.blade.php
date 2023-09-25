@@ -4,7 +4,8 @@
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
-                <label>{{__("Title")}}</label>
+                {{-- <label>{{__("Title")}}</label> --}}
+                <label>Job Title</label>
                 <input type="text" value="{{old('title',@$candidate->title)}}" name="title" placeholder="{{__("Title")}}" class="form-control">
             </div>
         </div>
@@ -75,15 +76,15 @@
             </div>
         </div>
 
-        <div class="col-md-12">
+        {{-- <div class="col-md-12">
             <div class="form-group">
                 <label class="control-label">{{__("Video Url")}}</label>
                 <p><i>{{__("Insert a video, which shows anything about you")}}</i></p>
                 <input type="text" name="video" class="form-control" value="{{old('video',@$candidate->video)}}" placeholder="{{__("Youtube link video")}}">
             </div>
-        </div>
+        </div> --}}
 
-        @if(is_default_lang())
+        {{-- @if(is_default_lang())
             <div class="col-md-12">
                 <div class="form-group">
                     <label>{{__("Video Cover Image")}}</label>
@@ -92,9 +93,9 @@
                     </div>
                 </div>
             </div>
-        @endif
+        @endif --}}
 
-        <div class="col-md-12">
+        {{-- <div class="col-md-12">
             <div class="form-group">
                 <label class="control-label">{{__("Gallery")}} ({{__('Recommended size image:1080 x 1920px')}})</label>
                 @php
@@ -102,7 +103,7 @@
                 @endphp
                 {!! \Modules\Media\Helpers\FileHelper::fieldGalleryUpload('gallery', $gallery_id) !!}
             </div>
-        </div>
+        </div> --}}
     </div>
 
 

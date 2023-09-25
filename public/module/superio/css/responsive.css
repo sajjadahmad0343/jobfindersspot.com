@@ -2228,15 +2228,23 @@
 	}
 
 	.dashboard .dashboard-outer{
-		padding: 40px 15px 0;
+		padding: 20px 15px 0;
 	}
-
+.default-form .form-group {
+    margin-bottom: 15px;
+}
+	.default-form .form-group:last-child {
+    margin-bottom: 15px;
+}
+.default-form .form-group .col-md-6:last-child .form-group {
+    margin-bottom: 0px;
+}
 	.ls-widget .widget-title{
-		padding: 20px 20px 20px;
+		padding: 12px 12px 12px;
 	}
 
 	.ls-widget .widget-content{
-		padding: 0 20px 10px;
+		padding: 0 12px 10px;
 	}
 
 	.ui-item{
@@ -2344,6 +2352,28 @@
 		padding: 7px 0.75rem;
 		font-size: 15px;
 	}
+.booking_cookie_agreement > div {display: block !important;}
+
+.booking_cookie_agreement .content-cookie p {
+     font-size: 0.8rem;
+    line-height: 1.5;
+}
+.booking_cookie_agreement .save-cookie {
+    padding: 0.25rem 1.5rem !important;
+}	
+body #wa_btn-content p {
+    margin-left: 4px!important;
+    font-size: 12px;
+    line-height: 14px;
+}
+	#wa_btn-content {
+    padding: 0.325rem 0.5rem !important;
+}
+	#wa_btn-content svg {width: 18px !important;}
+div#wa-btn-wrapper {
+    bottom: 10px !important;
+    right: 10px !important;
+}
 }
 @media only screen and (max-width: 479px){
 	.ls-section .filters-outer{

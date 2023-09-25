@@ -125,7 +125,9 @@ body {
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Roboto', sans-serif;
 }
-
+.booking_cookie_agreement {
+    padding-right: 111px !important;
+}
 a {
     text-decoration: none;
     cursor: pointer;
@@ -18287,7 +18289,7 @@ Chat Widget
     color: #1b2032;
     font-weight: 500;
     margin-right: 30px;
-    padding: 7px 0;
+    padding: 0px 0;
 }
 
 .ls-widget .widget-title h4 .icon {
