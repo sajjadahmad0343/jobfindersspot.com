@@ -126,7 +126,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .booking_cookie_agreement {
-    padding-right: 111px !important;
+    padding-right: 111px !important; padding-left: 0px !important;
 }
 a {
     text-decoration: none;
