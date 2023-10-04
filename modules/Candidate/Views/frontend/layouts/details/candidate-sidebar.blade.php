@@ -86,7 +86,7 @@
 </div>
 
 @if(!empty($row->skills) && count($row->skills) > 0)
-    <div class="sidebar-widget">
+    <div class="sidebar-widget d-none">
         <!-- Job Skills -->
         <h4 class="widget-title">{{__('Professional Skills')}}</h4>
         <div class="widget-content">

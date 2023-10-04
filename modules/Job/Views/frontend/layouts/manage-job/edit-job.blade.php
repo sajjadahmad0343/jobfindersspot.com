@@ -365,8 +365,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+                    </div> 
+ 
                     <!-- Ls widget -->
                     <div class="ls-widget d-none">
                         <div class="tabs-box">
