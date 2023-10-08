@@ -1,6 +1,9 @@
 <!-- Job Overview -->
+
+@if(!$row->company->role_id == 1)
 <h4 class="widget-title">{{ __("Job Overview") }}</h4>
-<div class="widget-content">
+@endif
+<div class="widget-content dddd">
     <ul class="job-overview">
         @if($row->created_at)
             <li>
