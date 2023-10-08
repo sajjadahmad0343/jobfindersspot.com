@@ -1,38 +1,6 @@
 <!-- Job Overview -->
 @auth
     @if(auth()->user()->role_id == 1)
-    <div class="d-flex flex-column m-5 mx-auto position-relative" style="width: 560px;min-height: 400px;border: 3px solid #fe872c;">
-        
-        <figure class="mb-0 mt mt-4 position-absolute start-50 top-50 translate-middle" style="
-    opacity: 0.15;
-">
-            <img src="https://jobfindersspot.com/uploads/0000/1/2023/08/18/logo.jpg" alt="" class="d-block mt-5 mx-auto rounded-circle" style="width: 180px;">
-        </figure><h3 src="" alt="" style="" class="fw-bold my-3 text-center">Hiring
-</h3><h1 class="mb-4 px-3 py-3 text-center text-uppercase" style="background: #fe872c;color: white;" text="">Front Desk Officer</h1><div class="job-body pt-3 px-3">
-        
-        
-        <table class="fs-6">
-            <tbody>
-                <tr>
-                    <th class="fw-bold pe-3 pb-3">Location:</th>
-                    <td class="fw-semibold pb-3">Karachi</td>
-                </tr>
-                <tr>
-                    <th class="fw-bold pe-3 pb-3">Job Title:</th>
-                    <td class="fw-semibold pb-3">Front Desk Officer</td>
-                </tr>
-                <tr>
-                    <th class="fw-bold pe-3 pb-3">Apply here:</th>
-                    <td class="fw-semibold pb-3">https://jobfindersspot.com/jobs/front-desk-officer</td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
-        <div class="job-footer mt-auto pb-3 pt-4 px-3 text-center">
-            <p class="mb-0 small">For More Jobs Visit:</p>
-            <p class="fw-semibold link-primary mb-0 small">www.jobfindersspot.com</p>
-        </div>
-    </div>
     {{-- @php dd(auth()->user()) @endphp --}}
     {{-- @php dd($row) @endphp --}}
     {{-- @php dd($row->company) @endphp --}}
