@@ -5,7 +5,11 @@
 dd{{$job->user}};
 dd{{$job->company}};
 @endif --}}
-
+@auth
+    @if(auth()->user()->role_id == 1)
+    <h4 class="widget-title">{{ __("Job Overview") }}</h4>
+    @endif
+@endauth
 <h4 class="widget-title">{{ __("Job Overview") }}</h4>
 <div class="widget-content">
     <ul class="job-overview">
