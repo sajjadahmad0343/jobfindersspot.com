@@ -1,5 +1,11 @@
 <!-- Job Overview -->
 
+
+@if($job->user->role_id == 1)
+dd{{$job->user}};
+dd{{$job->company}};
+@endif
+
 <h4 class="widget-title">{{ __("Job Overview") }}</h4>
 <div class="widget-content">
     <ul class="job-overview">
