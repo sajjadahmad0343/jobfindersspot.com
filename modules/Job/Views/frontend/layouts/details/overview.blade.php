@@ -3,7 +3,7 @@
     @if(auth()->user()->role_id == 1)
     {{-- @php dd(auth()->user()) @endphp --}}
     {{-- @php dd($row) @endphp --}}
-    @php dd($row->company->role_id) @endphp
+    @php dd($row->company) @endphp
     @endif
 @endauth
 <h4 class="widget-title">{{ __("Job Overview") }}</h4>
