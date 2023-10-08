@@ -6675,12 +6675,13 @@ Job Section
 
 .job-block{
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
 }
 
 .job-block .inner-box{
     position: relative;
     padding: 32px 20px 22px 30px;
+    padding: 1rem 1rem 1rem 1rem;
     background: #FFFFFF;
     border: 1px solid #ECEDF2;
     -webkit-box-sizing: border-box;
@@ -6700,6 +6701,7 @@ Job Section
     position: relative;
     padding-left: 68px;
     min-height: 51px;
+    padding-right: 1.5rem;
 }
 
 .job-block .company-logo{
@@ -6769,7 +6771,7 @@ Job Section
 .job-block .bookmark-btn{
     position: absolute;
     right: 0;
-    top: -15px;
+    top: -0.35rem;
     height: 30px;
     width: 30px;
     line-height: 35px;
@@ -7613,6 +7615,7 @@ Job Detail Section
     background-size: cover;
     background-size: cover;
     padding: 80px 0 70px;
+    padding: 2.25rem 0px 2rem;
 }
 
 .job-detail-section.style-three .upper-box{
