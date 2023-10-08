@@ -4,7 +4,7 @@
             <img src="{{ $company_logo }}" alt="{{ $row->company ? $row->company->name : 'company' }}">
         </span>
     @endif
-    <h4>{{ $translation->title }}</h4>
+    <h1 class="h4">{{ $translation->title }}</h1>
     <ul class="job-info">
         @if($row->category)
             @php $cat_translation = $row->category->translateOrOrigin(app()->getLocale()) @endphp

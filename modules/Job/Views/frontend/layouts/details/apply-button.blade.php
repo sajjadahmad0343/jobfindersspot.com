@@ -1,4 +1,5 @@
 <div class="btn-box">
+    @if($row->create_user != 1)
     @if($row->isOpen())
         @if(empty(setting_item('job_hide_job_apply')) && $row->apply_type == 'email')
             <a href="mailto:{{ $row->apply_email ?? ($row->company->email ?? '') }}" target="_blank" rel="nofollow" class="theme-btn btn-style-one">{{ __("Apply For Job") }}</a>
@@ -22,6 +23,7 @@
         @endif
     @else
         <div class="text-danger job-expired">{{ __("Job expired!") }}</div>
+    @endif
     @endif
     <button class="bookmark-btn service-wishlist @if($row->wishlist) active @endif" data-id="{{$row->id}}" data-type="{{$row->type}}"><i class="flaticon-bookmark"></i></button>
 </div>

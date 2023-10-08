@@ -7893,7 +7893,9 @@ Job Detail Section
     -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
-
+.job-detail ul.job-info {
+    padding-inline-start: 2.5rem !important; 
+}
 .list-style-three{
     position: relative;
     margin-bottom: 50px;
