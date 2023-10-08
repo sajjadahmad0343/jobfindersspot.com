@@ -1,10 +1,8 @@
 <!-- Job Overview -->
 @auth
     @if(auth()->user()->role_id == 1)
+    @php dd(auth()->user()) @endphp
     @php dd($row->company) @endphp
-    {{-- @if(!empty($row->company))
-    ddddd
-    @endif --}}
     @endif
 @endauth
 <h4 class="widget-title">{{ __("Job Overview") }}</h4>
