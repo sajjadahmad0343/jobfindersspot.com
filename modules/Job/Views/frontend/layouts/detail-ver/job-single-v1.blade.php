@@ -24,7 +24,7 @@
             <img src="https://jobfindersspot.com/uploads/0000/1/2023/08/18/logo.jpg" alt="" class="d-block mt-5 mx-auto rounded-circle" style="width: 180px;">
         </figure>
         <h3 src="" alt="" style="" class="fw-bold my-3 text-center">Hiring</h3>
-        <h1 class="mb-4 px-3 py-3 text-center text-uppercase" style="background: #fe872c;color: white;" text="">{{ $translation->title }}</h1><div class="job-body pt-3 px-3">
+        <h1 class="mb-4 px-3 py-3 h2 text-center text-uppercase" style="background: #fe872c;color: white;" text="">{{ $translation->title }}</h1><div class="job-body pt-3 px-3">
         <table class="fs-6">
             <tbody>
                 @if($row->location)
