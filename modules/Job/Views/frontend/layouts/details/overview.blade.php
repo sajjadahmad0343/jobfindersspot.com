@@ -1,7 +1,8 @@
 <!-- Job Overview -->
 @auth
     @if(auth()->user()->role_id == 1)
-    @php dd(auth()->user()) @endphp
+    {{-- @php dd(auth()->user()) @endphp --}}
+    @php dd($row) @endphp
     @php dd($row->company) @endphp
     @endif
 @endauth
