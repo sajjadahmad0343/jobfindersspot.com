@@ -19,16 +19,12 @@
             <div class="row">
    @auth
     @if(auth()->user()->role_id == 1)
-    <div class="d-flex flex-column m-5 mx-auto position-relative" style="max-width: 560px;min-height: 400px;border: 3px solid #fe872c;">
-        
+    <div class="d-flex flex-column mb-5 mx-auto position-relative" style="max-width: 560px;min-height: 400px;border: 3px solid #fe872c;">
         <figure class="mb-0 mt mt-4 position-absolute" style="right: 1rem;bottom: 1rem; max-width: 3.25rem;">
             <img src="https://jobfindersspot.com/uploads/0000/1/2023/08/18/logo.jpg" alt="" class="d-block mt-5 mx-auto rounded-circle" style="width: 180px;">
         </figure>
         <h3 src="" alt="" style="" class="fw-bold my-3 text-center">Hiring</h3>
         <h1 class="mb-4 px-3 py-3 text-center text-uppercase" style="background: #fe872c;color: white;" text="">{{ $translation->title }}</h1><div class="job-body pt-3 px-3">
-     
-   
-        
         <table class="fs-6">
             <tbody>
                 @if($row->location)
@@ -59,7 +55,6 @@
         var getjoblink = document.getElementById('get-joblink');
         getjoblink.innerHTML = currentUrl
     </script>
-
     @endif
 @endauth
             </div>
