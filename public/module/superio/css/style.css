@@ -17040,12 +17040,12 @@ Dashboard
 
 .dashboard .dashboard-outer{
     position: relative;
-    padding: 60px 60px 0;
+    padding: 2rem 1.5rem 0;
 }
 
 .dashboard .upper-title-box{
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 1.5rem;
 }
 
 .dashboard .upper-title-box h3{
