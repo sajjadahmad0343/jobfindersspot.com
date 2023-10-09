@@ -10197,7 +10197,9 @@ Candidates Section Two
     -ms-flex-align: center;
     align-items: center;
 }
+.option-box .option-list { list-style: none;
 
+}
 .option-list li{
     position: relative;
     margin-left: 10px;

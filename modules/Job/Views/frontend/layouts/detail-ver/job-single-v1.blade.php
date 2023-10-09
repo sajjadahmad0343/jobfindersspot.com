@@ -19,6 +19,9 @@
             <div class="row">
    @auth
     @if(auth()->user()->role_id == 1)
+
+
+    
     <div class="d-flex flex-column mb-5 mx-auto position-relative" style="max-width: 560px;min-height: 400px;border: 3px solid #fe872c;">
         <figure class="mb-0 mt mt-4 position-absolute" style="right: 1rem;bottom: 1rem; max-width: 3.25rem;">
             <img src="https://jobfindersspot.com/uploads/0000/1/2023/08/18/logo.jpg" alt="" class="d-block mt-5 mx-auto rounded-circle" style="width: 180px;">
