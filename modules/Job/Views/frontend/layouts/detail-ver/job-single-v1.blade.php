@@ -42,7 +42,7 @@
                     <td class="fw-semibold pb-3">{{ $translation->title }}</td>
                 </tr>
                 <tr>
-                    <th class="fw-bold pr-3 pb-3">Apply here:</th>
+                    <th class="fw-bold pr-3 pb-3 text-nowrap">Apply here:</th>
                     <td class="fw-semibold pb-3" id="get-joblink"></td>
                 </tr>
             </tbody>
