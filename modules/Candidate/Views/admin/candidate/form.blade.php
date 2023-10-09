@@ -1,14 +1,64 @@
     @php
         $candidate = $row->candidate;
     @endphp
+    <style>
+        .job-title-info{ font-size: 0.85rem
+}
+.pulse {
+animation: pulse-animation 2s infinite;
+}
+#job-title-info .card-body * {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+#job-title-info .card-body {min-width: 16rem;}
+@keyframes pulse-animation {
+    0% {
+        color: #000;
+    transform: scale(1, 1);
+  }
+  50% {
+    color: #007bff;
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    color: #000;
+    transform: scale(1, 1);
+  }
+}
+    </style>
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
                 {{-- <label>{{__("Title")}}</label> --}}
-                <label>Job Title</label>
+                <label>Job Title 
+                    <span class="position-relative">
+                    <a class="fafainfocircle ml-1 job-title-info pulse rounded-circle" data-toggle="collapse" href="#job-title-info" aria-expanded="true" aria-controls="job-title-info" style="cursor: pointer;">(need help? Click here)</a>
+                        <div id="job-title-info" class="bg-white border in position-absolute collapse" role="tabpanel" aria-labelledby="section1HeaderId" style="z-index: 9;">
+                            <div class="card-body p-2">
+                                <span closs="close-collapse fa fa-close" data-toggle="collapse" href="#job-title-info" aria-expanded="true" aria-controls="job-title-info" style="cursor: pointer; right:0.5rem; top:0.5rem; z-index:10" class="fa fa-times-circle position-absolute text-danger"></span>
+                                <p class="mb-2 ">A job title is the name given to your position at work. It helps others understand your role and where you fit in the organization.</p>
+                                <p class="mb-2" style="font-weight: 500">Some Common examples are:</p>
+                                <ul class="list mb-2 pl-3">
+                                    <li>Project Manager</li>
+                                    <li>Software Engineer</li>
+                                    <li>Marketing Coordinator</li>
+                                    <li>Human Resources Specialist</li>
+                                    <li>Sales Associate</li>
+                                    <li>Accountant</li>
+                                    <li>Graphic Designer</li>
+                                    <li>and more</li>
+                                </ul>
+                                 <p class="mb-0">Your job title matters, so choose wisely!</p>
+                            </div>
+                        </div>
+                    </span>
+                </label>
                 <input type="text" value="{{old('title',@$candidate->title)}}" name="title" placeholder="{{__("Title")}}" class="form-control">
             </div>
         </div>
+        
         <div class="col-md-6">
             <div class="form-group">
                 <label>{{__("Website")}}</label>
