@@ -18285,7 +18285,7 @@ Chat Widget
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     background: transparent;
-    padding: 20px 30px 30px;
+    padding: 1rem 1rem;
     min-height: 60px;
 }
 
@@ -18390,6 +18390,7 @@ Chat Widget
 .ls-widget .widget-content {
     position: relative;
     padding: 0px 30px 10px;
+    padding: 0 1rem 1rem;
 }
 
 .ls-widget .widget-content p {
