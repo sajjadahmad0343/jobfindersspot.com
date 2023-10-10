@@ -31,16 +31,16 @@
                 @if($row->location)
                 <tr>
                     @php $location_translation = $row->location->translateOrOrigin(app()->getLocale()) @endphp
-                    <th class="fw-bold pr-3 pb-3">Location:</th>
+                    <th class="fw-bold align-top pr-3 pb-3">Location:</th>
                     <td class="fw-semibold pb-3">{{ $location_translation->name }}</td>
                 </tr>
                 @endif
                 <tr>
-                    <th class="fw-bold pr-3 pb-3">Job Title:</th>
+                    <th class="fw-bold align-top pr-3 pb-3">Job Title:</th>
                     <td class="fw-semibold pb-3">{{ $translation->title }}</td>
                 </tr> 
                 <tr>
-                    <th class="fw-bold pr-3 pb-3 text-nowrap">Apply here:</th>
+                    <th class="fw-bold align-top pr-3 pb-3 text-nowrap">Apply here:</th>
                     <td class="fw-semibold pb-3" id="get-joblink"></td>
                 </tr>
             </tbody>
@@ -48,7 +48,7 @@
         </div>
         <div class="job-footer mt-auto pb-3 pt-4 px-3 text-center">
             <p class="mb-0 small">For More Jobs Visit:</p>
-            <p class="fw-semibold link-primary mb-0 small">www.jobfindersspot.com</p>
+            <p class="fw-semibold link-primary mb-0 small text-primary">www.jobfindersspot.com</p>
         </div>
     </div>
     <script>
